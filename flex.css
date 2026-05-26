@@ -1,0 +1,83 @@
+body{
+    background:#d8b07c;
+    font-family:'Poppins', sans-serif;
+    color:#2b1207;
+}	
+
+nav{
+    background:#f5e7d0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+}
+
+nav h2{
+    font-family:'Playfair Display', serif;
+}
+
+nav ul{
+    display:flex;
+    gap:40px;
+    list-style:none;
+}
+
+nav button{
+    padding:12px 22px;
+    border:none;
+    background:#2b1207;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+.hero{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding:60px;
+    gap:60px;
+}
+
+.left h1{
+    font-size:90px;
+    font-family:'Playfair Display', serif;
+    line-height:1;
+    margin-bottom:50px;
+}
+
+.drink{
+    margin-bottom:70px;
+}
+
+.drink h2{
+    font-family:'Playfair Display', serif;
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.drink p{
+    width:80%;
+    line-height:1.7;
+}
+
+/* RIGHT */
+
+.card{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:#f8f3eb;
+    padding:20px;
+    border-radius:25px;
+    width:500px;
+    margin-bottom:50px;
+}
+
+.card img{
+    width:250px;
+    border-radius:20px;
+}
+
+.card-text h2{
+    font-family:'Playfair Display', serif;
+    font-size:45px;
+}
