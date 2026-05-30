@@ -1,13 +1,9 @@
-@media ( max-width: 600px) { 
-    .head { flex-direction: column;}
-}
-
 body{
     background-color: #d8b07c;
     margin-left: 5px;
     margin-right: 0px;
-    padding: 2px, 10px, 10px, 0px;
-    font-family: 'Poppins', serif;
+    padding: 2px 10px 10px 0px;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
 }
 
@@ -16,55 +12,48 @@ p { font-size: 15px;}
 h1 { font-family: 'Playfair Display', serif;
     color: #3a1515;}
 
-h2 { color: #2b0b0b;
-    font-family: 'Playfair Display', serif;}
-
-span { font-size: 25px;
-    font-weight: bold;
-    color: #5e230a;}
+    h2 { color: #2b0b0b;
+        font-family: 'Playfair Display', serif;}
+        
+        nav { font-family: 'Playfair Display', serif;
+            background: #f0d9b4;
+        border: #f0d9b4;
+        border-width: 5px;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 220px 0px 155px;}
     
-    li span { position: absolute;
-    left: 170px;
-    font-weight: bold;
-    font-size: 24px;}
+        nav ul li { display: inline;
+            font-size: 18px;
+            font-weight: lighter;
+        }
+        
+        nav ul button { background: #331306;
+            border-radius: 8px;
+            width: 83px;
+            height: 30px;}
+        
+        a:link { text-decoration: none;
+        color: rgb(224, 18, 18);}
+        
+        a:visited { color: #331306;}
+        
+        a:hover { color: rgb(2, 57, 207); }
+        
+        button a:visited { color: rgb(255, 255, 255);}
+        button a:hover { color: aqua;}
     
-    nav { font-family: 'Playfair Display', serif;
-        background: #f0d9b4;
-    border: #f0d9b4;
-    border-width: 10px;}
-    
-    nav ul { text-align: right;
-    margin-right: 280px;
-    margin-top: 0px;
-    font-size: 14px;
-    font-weight: lighter;
-    padding: 10px;}
-    
-    nav ul li { display: inline;
-    padding: 5px;}
-    
-    nav ul button { background: #331306;
-        border-radius: 8px;
-        width: 85px;
-        height: 30px;}
-    
-    a:link { text-decoration: none;
-    color: rgb(224, 18, 18);}
-    
-    a:visited { color: rgb(75, 99, 112);}
-    
-    a:hover { color: rgb(2, 207, 207); }
-    
-    button a:visited { color: rgb(255, 255, 255);}
-    button a:hover { color: aqua;}
+        .nav { display: flex;
+            gap: 12px;}
 
     
-div.container { font-family: 'Poppins', serif;
+div.container { font-family: 'Poppins', sans-serif;
     display: grid;
 grid-template-columns: 1fr 1fr;
 margin: 55px 85px 75px 155px;
-gap: 20px;
-grid-template-columns: repeat(auto-fit, minmax(250px))}
+gap: 20px;}
 
 .left h1 { margin-bottom: 60px;
 font-size: 60px;
@@ -73,7 +62,7 @@ line-height: 60px;}
 .drinks{ margin-bottom: 65px;
 line-height: 15px;}
 
-.mocha { margin-bottom: 75px;
+.mocha { margin-bottom: 80px;
     line-height: 15px;}
 
 .drinks h2 { font-size: 32px;
@@ -90,11 +79,8 @@ line-height: 5px;}
     border-radius:25px;
     width:350px;
     height: 155px;
-    margin-bottom:45px;}
+    margin-bottom:40px;}
 
 .coffee { display: grid;
 grid-template-columns: 1fr 1fr;
 gap:20px}
-
-.box {background: orange;
-padding: 40px;}

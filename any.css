@@ -7,25 +7,20 @@ body{
     font-size: 13px;
 }
 
-form { display: table;}
-
-div.tableRow { display: table-row;
-}
-
-div.tableRow p { display: table-cell;
-vertical-align: top;
-padding: 3px;}
-
-div.tableRow p:first-child { text-align: right;}
-
-p.heading {font-weight: bolder;}
+#center { text-align: center;}
 
 a:link { text-decoration: none;}
 
+h1 { font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: maroon;
+    margin-top: 20px;
+padding-top: 20px;}
+    
 li, ul { font-weight: bold;
 color: #75441c;
 list-style-type: none;
-padding: 0px 2px 0px 10px;
+padding: 0px 0px 0px 0px;
 font-family: 'Playfair Display', serif;
 font-size: 15px;
 }
@@ -33,134 +28,81 @@ font-size: 15px;
 div#all {background-color: #ece5c3;
 border-radius: 15px;
 border-top: 2px #4e301b;
-width: 575px;
-height: 590px;
+width: 545px;
+height: 650px;
 margin: 0px 0px 0px 0px;
-margin-left: 130px;}
-
-h1, h2 { font-family: 'Playfair Display', serif;
-    text-align: center;}
-    
-h1 { color: maroon;
-    margin-top: 20px;}
-
-#center { text-align: center;}
+margin-left: 130px;
+padding: 0px 35px 0px 35px;
+line-height: 10px;}
 
 input { color: #815836;}
 
 .radio { color: #80522c;}
 
-.name { width: 158px;
-    margin-left: 25px;
+p.heading {font-weight: bolder;}
+
+.grid1 { display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0px}
+
+.grid2 {display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 1px;
+padding-top: 10px;}
+
+.grid3 { display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;}
+
+.beans { width: 420px;
+height: 27px;
 border-top: none;
-border-left: none;
-border-right: none;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-padding-top: 7px;}
+    border-left: none;
+    border-right: none;
+    border-radius: 3px;}
 
-.address, .zip{ width: 172px;
-margin-left: 5px;
-border-top: none;
-border-left: none;
-border-right: none;
-border-top-left-radius: 3px; 
-border-top-right-radius: 3px;
-padding-top: 7px;}
+    .date { width: 450px;
+        height: 25px;
+        border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 3px;}
+        
+        .number, .date2 { width: 163px;
+            height: 21px;
+            border-top: none;
+                border-left: none;
+                border-right: none;
+                border-radius: 3px;}
 
-.state { width: 158px;
+.city, .state, .zip, .phone { width: 128px;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-padding-top: 7px;}
+    border-radius: 2px;
+height: 20px;}
 
-.city, .phone{ width: 160px;
-margin-left: 3px;
-border-top: none;
-border-left: none;
-border-right: none;
-border-top-left-radius: 3px;
-border-top-right-radius: 3px;
-padding-top: 7px;}
-
-#problem { position: absolute;
-top: 435px;
-left: 380px;}
-
-form textarea { width: 0px;
-    height: 50px;}
-
-    .button { background-color: #744927;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 16px;
-    color: white;
-    border: 1px #80522c;
-    border-radius: 20px;
-    width: 520px;
-    height: 35px;}
-
-.date { width: 423px;
+.name, .address { width: 265px;
     border-top: none;
-    border-bottom: none;
     border-left: none;
     border-right: none;
-    border-radius: 5px;
-    padding-top: 4px;
-    padding-bottom: 6px;
-padding-left: 0px;
-margin-left: 10px;
-position: absolute;
-left: 465px;
-bottom: 320px;}
+    border-radius: 2px;
+    height: 20px;}
 
-.beans { width: 390px;
-    border-top: none;
-    border-bottom: none;
+.button { background-color: #744927;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+color: white;
+border: 1px #80522c;
+border-radius: 20px;
+width: 546px;
+height: 35px;}
+
+.text {  border-top: none;
     border-left: none;
     border-right: none;
-    border-radius: 5px;
-padding-bottom: 4px;
-padding-top: 3px;
-position: absolute;
-left: 505px;
-top: 150px;}
+    border-radius: 3px;}
 
-#align, #aligntype, #alignnumber, #alignextras, #Delivery { text-align: left;
-padding-left: 30px;
-padding-top: 0px;}
-
-#aligntype, #Delivery { text-align: left;
-padding-left: 30px;
-padding-top: 5px;}
-
-#alignnumber { text-align: left;
-padding-left: 30px;
-padding-top: 8px;}
-
-#alignextras { text-align: left;
-    padding-left: 30px;
-    padding-top: 8px }
-
-.beantype { position: absolute;
-left: 418px;
-top: 161px;}
-
-.extras { position: absolute;
-left: 420px;
-top: 211px;}
-
-.number { position: absolute;
-left: 480px;
-top: 185px;}
-
-.dateagain { width: 254px;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    border-radius: 5px;
-    padding-top: 4px;
-    padding-left: 5px;
-    padding-bottom: 3px;}
+.container { display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px}

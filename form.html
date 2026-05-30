@@ -10,36 +10,30 @@
         <div id="all">
         <h1> Starbuzz Coffee Order Form</h1>
         <p id="center"> Fill out the form below and click "Place Order" to order your favorite beans</p>
+        <section>
         <form action="http://starbuzzcoffee.com/processorder.php" method="post">
-
         <ul>
             <li>1. Select Your Coffee</li>
         </ul>
-        <div class="tableRow">
-            <p id="align">Choose your beans:</p>
+        <div class="grid3">
+            <p id="align">Choose your beans:
             <select name="beans" class="beans">
                 <option value="House Blend">House Blend</option>
                 <option value="Bolivia">Shade Grown Bolivia</option>
                 <option value="Guatemala">Organic Guatemala</option>
                 <option value="Kenya">Kenya</option>
-            </select>
+            </select> </p>
         </div>
-        <div class="tableRow">
-            <p id="aligntype">Type:</p>
-            <p class="beantype">
-            <input class="radio" type="radio" name="beantype" checked value="whole">Whole bean
-            <input class="radio" type="radio" name="beantype" value="ground">Ground
-            </p>
+        <div class="grid1">
+            <p id="aligntype">Type: <input class="radio" type="radio" name="beantype" checked value="whole">Whole bean
+            <input class="radio" type="radio" name="beantype" value="ground">Ground </p>
         </div>
-        <div class="tableRow">
-            <p id="alignnumber">Number of bags:</p> <p class="number"><input type="number" name="bags" min="1" max="15" value="1">
-                Must arrive by:<input class="dateagain" type="date" name="date">
-            </p>
+        <div class="grid1">
+            <p id="alignnumber">Number of bags: <input class="number" type="number" name="bags" min="1" max="15" value="1"></p>
+            <p id="Delivery">Must arrive by: <input class="date2" type="date" name="date"></p>
         </div>
-        <div class="tableRow">
-            <p id="alignextras">Extras:</p>
-            <p class="extras">
-            <input type="checkbox" name="extras" value="giftwrap">Giftwrap
+        <div class="grid3">
+            <p id="alignextras">Extras: <input type="checkbox" name="extras" value="giftwrap">Giftwrap
             <input type="checkbox" name="extras" value="catalog" checked>Include catalog with orders
             </p>
         </div>           
@@ -47,29 +41,30 @@
         <ul>
           <li>2. Delivery Details</li>
         </ul>
-        <div class="tableRow">
-            <p id="Delivery">Must arrive by:</p> <p><input class="date" type="date" name="date"></p>
-            </p>
+        <div class="grid3">
+            <p id="Delivery">Must arrive by: <input class="date" type="date" name="date"></p>
         </div>
         <ul>
             <li>3. Shipping Address<li>
           </ul>
-        <div class="tableRow">
-            <p><input class="name" type="text" name="name" value="Name"></p>
-            <p><input class="city" type="text" name="city" value="City">
-                <input class="address" type="text" name="Address" value="Address"></p></div>
-        <div class="tableRow"> 
-            <p><input class="state" type="text" name="state" value="State"></p>
-            <p><input class="phone" type="tel" name="Phone" value="Phone">
-                <input class="zip" type="text" name="zip" value="Zip"></p>
+        <div class="grid1">
+            <input class="name" type="text" name="name" value="Name">
+            <input class="address" type="text" name="Address" value="Address"></div>
+        <div class="grid2"> 
+            <input class="city" type="text" name="city" value="City">
+            <input class="state" type="text" name="state" value="State">
+            <input class="phone" type="tel" name="Phone" value="Phone">
+            <input class="zip" type="text" name="zip" value="Zip">
         </div>    
-    </div>
     <div id="problem">
         <p>Customer Comments</p>
-            <p><textarea name="comments" rows="4" cols="68"></textarea></p>
+            <p><textarea class="text" name="comments" rows="4" cols="71"></textarea></p>
         <input class="button" type="submit" value="Place Order"></p>
         </form>
     </div>
+</div>
+    </body>
+    </html>
 
 
        
